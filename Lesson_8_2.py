@@ -17,7 +17,7 @@ def calculate_average(numbers):
         return total_sum / count
     except ZeroDivisionError:
         return 0
-    except TypeError:
+    finally:
         print(f'В {numbers} записан некорректный тип данных')
 
 
